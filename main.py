@@ -21,11 +21,11 @@ class MyClient(discord.Client):
             await message.channel.send("Here is the phone number : +9710509129777 dont spam this number, send your message and wait 1-2 days")
             
         if message.content == 'Commands':
-        	await message.channel.send("tell me a joke : Sends a randomly generated joke")
-        	await message.channel.send("What is High Standards Whatsapp Number : Sends High Standards' whatsapp number")
-        	await message.channel.send("What is High Standards phone Number : Sends High Standards' phone number")
-        	await message.channel.send("Show me the source code : Sends the source code for this bot")
-        	await message.channel.send("I wanna know more about the developer : tells you abt me lmao") 
+            await message.channel.send("tell me a joke : Sends a randomly generated joke")
+            await message.channel.send("What is High Standards Whatsapp Number : Sends High Standards' whatsapp number")
+            await message.channel.send("What is High Standards phone Number : Sends High Standards' phone number")
+            await message.channel.send("Show me the source code : Sends the source code for this bot")
+            await message.channel.send("I wanna know more about the developer : tells you abt me lmao") 
 
 intents = discord.Intents.default()
 intents.message_content = True
