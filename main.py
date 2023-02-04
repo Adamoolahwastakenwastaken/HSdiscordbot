@@ -12,15 +12,22 @@ class MyClient(discord.Client):
             return
 
         if message.content == 'what can you do?':
-            await message.channel.send('Hi, Im the High Standards chat bot designed to help you!, I can do many things such as : Tell a joke, Help you contact the High Standards team and much more if you want a full list of commands message : Commands')
+            await message.channel.send('Hi, Im the High Standards chat bot designed to help you!, I can do many things such as : Tell a joke, Help you contact the High Standards team and much more if you want a full list of commands message : Commands if you have any suggestions visit : https://github.com/Adamoolahwastakenwastaken/HSdiscordbot and leave an issue or as an alternate solution Message : Adamoolah#4563')
         if message.content == 'tell me a joke':
             await message.channel.send(cool_jokes[randint(0,6)])  
         if message.content == 'What is High Standards Whatsapp Number':
             await message.channel.send("Here is the whatsapp number : +9710558861666 dont spam this number, send your message and wait 1-2 days")
         if message.content == 'What is High Standards phone Number':
-            await message.channel.send("Here is the phone number : +9710509129777 dont spam this number, send your message and wait 1-2 days")        
+            await message.channel.send("Here is the phone number : +9710509129777 dont spam this number, send your message and wait 1-2 days")
+            
+        if message.content == 'Commands':
+        	await message.channel.send("tell me a joke : Sends a randomly generated joke")
+        	await message.channel.send("What is High Standards Whatsapp Number : Sends High Standards' whatsapp number")
+        	await message.channel.send("What is High Standards phone Number : Sends High Standards' phone number")
+        	await message.channel.send("Show me the source code : Sends the source code for this bot")
+        	await message.channel.send("I wanna know more about the developer : tells you abt me lmao") 
 
 intents = discord.Intents.default()
 intents.message_content = True
 client = MyClient(intents=intents)
-client.run('MTA3MDk1NDYzNDk1ODYxMDQ2Mg.GM2CjL.47lpygvikwu9p_XdLOofJYoRtVsKUElwJ4ciM8')
+client.run('MTA3MDk1NDYzNDk1ODYxMDQ2Mg.GLM7r0.XORnSk5kuZcV2-2ITpPwPFpZf6nKNAXeChUHC4')
